@@ -72,10 +72,10 @@ directory '/mnt/docker' do
   action :create
 end
 
-docker_container 'tduffield/testcontainerd' do
-  detach true
-  port '9999:9999'
-end
+# docker_container 'tduffield/testcontainerd' do
+#   detach true
+#   port '9999:9999'
+# end
 
 docker_container 'busybox-container' do
   image 'busybox'
